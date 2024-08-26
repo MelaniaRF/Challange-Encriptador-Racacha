@@ -40,9 +40,9 @@ body {
 }
 
 .Titulo1 {
-    font-size: 45px;
+    font-size: 35px;
     color: var(--color-blanco);
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .Subtitulo {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     margin: 3px 0;
     color: var(--color-blanco);
@@ -68,7 +68,7 @@ body {
 
 .campo-texto {
     margin-left: 15px;
-    width: 900px;
+    width: 600px;
     height: 300px;
     font-size: 1.8em;
     padding: 33px;
@@ -104,8 +104,8 @@ textarea::placeholder {
 }
 
 button {
-    width: 250px;
-    padding: 20px;
+    width: 240px;
+    padding: 15px;
     margin: 5px 0;
     font-size: 1.1em;
     border: none;
@@ -164,7 +164,7 @@ button.active {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 60%;
+    width: 70%;
     height: 400px;
     background: #212121;
     border-radius: 26px;
