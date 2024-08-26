@@ -196,7 +196,7 @@ function copiarAlPortapapeles() {
     abrirModal(
         'Confirmación de copia',
         '¿Está seguro de que desea copiar el texto al campo de entrada?',
-        '../img/modal.png',
+        './img/modal.png',
         () => {
             campoEntrada.value = campoSalida.value;
             campoSalida.value = '';
