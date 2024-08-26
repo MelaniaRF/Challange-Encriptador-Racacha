@@ -165,7 +165,7 @@ button.active {
     justify-content: center;
     gap: 10px;
     width: 80%;
-    height: 400px;
+    height: 300px;
     background: #212121;
     border-radius: 26px;
     box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.5);
@@ -188,8 +188,8 @@ button.active {
 }
 
 .imagen-placeholder {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     margin-bottom: 10px;
 }
 
