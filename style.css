@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     background-color: #212121;
-    background-image: url('/img/Fondo.png');
+    background-image: url('./img/Fondo.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ body {
 
 .campo-texto {
     margin-left: 15px;
-    width: 600px;
+    width: 800px;
     height: 300px;
     font-size: 1.8em;
     padding: 33px;
@@ -172,7 +172,7 @@ button.active {
     border: 1px solid #5a5a5b;
     text-align: center;
     color: var(--color-blanco);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .campo-salida {
@@ -184,7 +184,7 @@ button.active {
     height: 400px;
     border-radius: 26px;
     border: 1px solid #E7E8EC;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 
 .imagen-placeholder {
@@ -194,7 +194,7 @@ button.active {
 }
 
 .mensaje-placeholder {
-    font-size: 1.2em;
+    font-size: 14px;
     font-weight: bold;
     color: var(--color-blanco);
     margin: 5px 0;
@@ -203,14 +203,14 @@ button.active {
 .submensaje-placeholder {
     color: var(--color-blanco-info);
     margin: 0;
-    font-size: 1em;
+    font-size: 12px;
 }
 
 .pie-pagina {
     background-color: #212121;
     color: var(--color-blanco);
     font-size: 1em;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     width: 100%;
 }
