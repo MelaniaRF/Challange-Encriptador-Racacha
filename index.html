@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto que permite encriptar y desencriptar mensajes.">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/encriptador.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <img src="./img/Logo.png" alt="Logo">
+        <h1 class="Titulo1">Challange <strong class="Titulo2">Encriptador de texto</strong></h1>
+        <h2 class="Subtitulo">Ingrese el texto que desea encriptar o desencriptar:</h2>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="seccion-texto">
+            <textarea id="campoEntrada" class="campo-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"
+                oninput="validarCampoEntrada()"></textarea>
+            <div class="informacion-entrada">
+                <img class="img-icon" src="./img/info.png" alt="Icono de alerta informacion importante">
+                <p class="texto-informacion">No se permite el ingreso de mayúsculas, tampoco caracteres especiales.</p>
+            </div>
+            <div class="botonera">
+                <button id="botonEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button id="botonDesencriptar" onclick="desencriptarTexto()" disabled onmouseover="mostrarTooltip(this)"
+                    onmouseout="ocultarTooltip()">Desencriptar</button>
+                <button id="botonLimpiar" onclick="limpiarCamposTexto()" disabled onmouseover="mostrarTooltip(this)"
+                    onmouseout="ocultarTooltip()">Limpiar</button>
+                <div id="tooltip" class="tooltip">Habilitado cuando hay texto para desencriptar o limpiar</div>
+            </div>            
+        </section>
+    
+        <section class="seccion-salida">
+            <div class="mensaje-inicial">
+                <img src="./img/Fondo2.png" alt="Ningún mensaje fue encontrado" class="imagen-placeholder">
+                <p class="mensaje-placeholder">Ningún mensaje fue encontrado</p>
+                <p class="submensaje-placeholder">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <textarea id="campoSalida" class="campo-salida" cols="20" rows="10" readonly style="display:none;"></textarea>
+            <button id="botonCopiar" onclick="copiarAlPortapapeles()" style="display:none;">Copiar Texto</button>
+        </section>
+    </main>    
+
+    <div id="modalAlerta" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitulo"><strong>Caracteres no permitidos</strong></h2>
+                <span class="modal-close-icon" onclick="cerrarModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImagen" src="./img/modal.png" alt="Advertencia" class="modal-image">
+                <p id="modalDescripcion">Solo se permiten letras minúsculas y espacios para frases o textos largos.
+                    Caracteres especiales y
+                    mayúsculas no son permitidos.</p>
+                <button class="modal-aceptar-btn" onclick="cerrarModal()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <p>© <span id="year"></span> Melania Racacha Flores - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
