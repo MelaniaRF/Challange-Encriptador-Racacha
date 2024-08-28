@@ -21,7 +21,6 @@ Aplicación web para encriptar y desencriptar textos utilizando un esquema de su
         - `ufat` se convierte en `u`
 
 **Requisitos**
-    Requisitos:
         - Debe funcionar solo con letras minúsculas
         - No deben ser utilizados letras con acentos ni caracteres especiales
         - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
